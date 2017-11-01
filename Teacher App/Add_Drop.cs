@@ -94,6 +94,7 @@ namespace Teacher_App
                     student_name.Text = "";
                     MessageBox.Show(temp.name + " has been added");
                     last_student.Text = "Last Student Added: " + Form1.Student_list[Form1.Student_list.Count - 1].name;
+                    global_status.List_changed = true;
                 }
                 else
                 {
@@ -110,6 +111,7 @@ namespace Teacher_App
                 if (remove_student != null && remove_student.student_id == student_id.Text)
                 {
                     Form1.Student_list.Remove(remove_student);
+                    global_status.List_changed = true;
                 }
                 else
                 {

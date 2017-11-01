@@ -73,6 +73,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="global_status.cs" />
     <Compile Include="Grades.cs">
       <SubType>Form</SubType>
     </Compile>

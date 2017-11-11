@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +20,7 @@ namespace Teacher_App
         public decimal midterm_grade;
         public decimal final_grade;
         public decimal assignment_total_grade;
+        public decimal total_grade;
 
         //default constructor
         public Student()

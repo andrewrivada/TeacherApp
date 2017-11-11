@@ -29,7 +29,7 @@ namespace Teacher_App
             if (File.Exists("students.dat") && global_status.First_load) // loads from file for only the first time
             {
                 //Check if File exists 
-                label3.Text = "File Exists";
+
                 using (BinaryReader reader = new BinaryReader(File.Open("students.dat", FileMode.Open)))
                 {
                     while (reader.PeekChar() != -1)
@@ -42,7 +42,7 @@ namespace Teacher_App
                         int Gindex = reader.ReadInt32();
                         int attendance = reader.ReadInt32();
 
-                        List<int> Grades = new List<int>();
+                        List<decimal> Grades = new List<decimal>();
 
                         //using Gindex to keep track of how many grades in Grades list
                         for (int i = 0; i < Gindex; i++)
@@ -53,7 +53,6 @@ namespace Teacher_App
 
 
                         Student student = new Student(name, student_id, profesor_id, course_id, Gindex, attendance, Grades);
-                        label3.Text = student.name;
                         Student_list.Add(student);
                         index++;
 
@@ -141,7 +140,7 @@ namespace Teacher_App
         //example adding student to list for testing
         private void Add_Click(object sender, EventArgs e)
         {
-            List<int> exGrades = new List<int>();
+            List<decimal> exGrades = new List<decimal>();
             exGrades.Add(1);
             Student student = new Student("Ryan","RyanOune01",123,1234,1,10,exGrades);
            
@@ -151,24 +150,6 @@ namespace Teacher_App
         }
 
 
-        //Labels used to test if students are saved on binary file
-        private void label3_Click(object sender, EventArgs e)
-        {
-            label3.Text = index.ToString();
-           
-        }
-        private void label4_Click(object sender, EventArgs e)
-        {
-            label3.Text = Student_list[0].name;
-            label4.Text = Student_list[0].student_id;
-            label5.Text = Student_list[0].Gindex.ToString();
-        }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            label3.Text = Student_list[0].name;
-            label4.Text = Student_list[0].student_id;
-            label5.Text = Student_list[0].Gindex.ToString();
-        }
     }
 }

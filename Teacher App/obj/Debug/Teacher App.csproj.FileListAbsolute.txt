@@ -112,3 +112,19 @@ C:\Users\andre\Desktop\Teacher App\Teacher App\obj\Debug\Teacher App.csproj.Gene
 C:\Users\andre\Desktop\Teacher App\Teacher App\obj\Debug\Teacher App.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\Teacher App\Teacher App\obj\Debug\Teacher App.exe
 C:\Users\andre\Desktop\Teacher App\Teacher App\obj\Debug\Teacher App.pdb
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\Teacher App.exe.config
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.exe
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.pdb
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.csprojResolveAssemblyReference.cache
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Add_Drop.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Attendance.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Export.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Form1.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Grades.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Login.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Properties.Resources.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Students.resources
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.csproj.GenerateResource.Cache
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\Teacher App.exe
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\Teacher App.pdb
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\MySql.Data.xml

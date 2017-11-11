@@ -15,8 +15,11 @@ namespace Teacher_App
         public int profesor_id;
         public int course_id;
         public int Gindex;
-        public List<int> Grades= new List<int>();
+        public List<decimal> Grades = new List<decimal>();
         public int attendance;
+        public decimal midterm_grade;
+        public decimal final_grade;
+        public decimal assignment_total_grade;
 
         //default constructor
         public Student()
@@ -25,7 +28,7 @@ namespace Teacher_App
         }
         //New constructor for creating a Student Object
         //Safer to use than default constructor if adding to list
-        public Student(string name,string sID, int pID, int cID, int Gi, int att, List<int> g)
+        public Student(string name,string sID, int pID, int cID, int Gi, int att, List<decimal> g)
         {
             this.name = name;
             this.student_id = sID;

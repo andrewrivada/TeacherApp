@@ -117,7 +117,6 @@ C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.exe
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.pdb
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.csprojResolveAssemblyReference.cache
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Add_Drop.resources
-C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Attendance.resources
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Export.resources
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Form1.resources
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.Grades.resources
@@ -128,3 +127,4 @@ C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher App.csproj.Gene
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\Teacher App.exe
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\Teacher App.pdb
 C:\Users\Andrew\Desktop\TeacherApp\Teacher App\bin\Debug\MySql.Data.xml
+C:\Users\Andrew\Desktop\TeacherApp\Teacher App\obj\Debug\Teacher_App.N_Attendance_label.resources

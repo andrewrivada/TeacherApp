@@ -101,7 +101,7 @@ namespace Teacher_App
         private void button1_Click_1(object sender, EventArgs e) // alter attendance
         {
             this.Hide();
-            Attendance F2 = new Attendance();
+            N_Attendance_label F2 = new N_Attendance_label();
             F2.ShowDialog();
             this.Close();
         }

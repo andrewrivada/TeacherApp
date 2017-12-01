@@ -61,9 +61,9 @@
             this.please_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.please_text.Location = new System.Drawing.Point(54, 76);
             this.please_text.Name = "please_text";
-            this.please_text.Size = new System.Drawing.Size(272, 26);
+            this.please_text.Size = new System.Drawing.Size(262, 26);
             this.please_text.TabIndex = 3;
-            this.please_text.Text = "Please Enter the course ID";
+            this.please_text.Text = "Please Enter the Class ID";
             // 
             // course_id_box
             // 
@@ -214,6 +214,7 @@
             this.Controls.Add(this.main_menu_button);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "N_Attendance_label";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Attendance";
             this.Load += new System.EventHandler(this.Attendance_Load);
             this.ResumeLayout(false);

@@ -19,13 +19,12 @@ namespace Teacher_App
         {
             InitializeComponent();
             int numList = Form1.Student_list.Count();
-            
             for (int i = 0; i < numList; i++)
             {
 
                 //Calculates the total grade then initializes the List
                 Form1.Student_list[i].total_grade = ((decimal)(.70) * Form1.Student_list[i].assignment_total_grade)
-                    + ((decimal)(.15) * Form1.Student_list[i].midterm_grade) 
+                    + ((decimal)(.15) * Form1.Student_list[i].midterm_grade)
                     + ((decimal)(.15) * Form1.Student_list[i].final_grade);
 
                 ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);

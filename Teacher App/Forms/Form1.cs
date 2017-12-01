@@ -50,14 +50,11 @@ namespace Teacher_App
                             int grade = reader.ReadInt32();
                             Grades.Add(grade);
                         }
-
-
+                        
                         Student student = new Student(name, student_id, profesor_id, course_id, Gindex, attendance, Grades);
                         Student_list.Add(student);
                         index++;
-
-
-
+                        
                     }
                     global_status.First_load = false;
                 }
@@ -94,6 +91,9 @@ namespace Teacher_App
             
             this.Hide();
             Add_Drop F2 = new Add_Drop();
+            F2.Left = this.Left;
+            F2.Top = this.Top;
+            F2.Size = this.Size;
             F2.ShowDialog();
             this.Close();
         }

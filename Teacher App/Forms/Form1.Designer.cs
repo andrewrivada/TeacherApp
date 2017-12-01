@@ -40,7 +40,7 @@
             // Add_Drop
             // 
             this.Add_Drop.Location = new System.Drawing.Point(42, 224);
-            this.Add_Drop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_Drop.Margin = new System.Windows.Forms.Padding(2);
             this.Add_Drop.Name = "Add_Drop";
             this.Add_Drop.Size = new System.Drawing.Size(70, 29);
             this.Add_Drop.TabIndex = 0;
@@ -51,7 +51,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(151, 224);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 29);
             this.button1.TabIndex = 1;
@@ -62,7 +62,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(258, 224);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 29);
             this.button2.TabIndex = 2;
@@ -73,7 +73,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(364, 224);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 29);
             this.button3.TabIndex = 3;
@@ -108,6 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Teacher_App.Properties.Resources.school_apple_on_desk;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(736, 449);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -115,9 +116,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Add_Drop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teacher Utility Application";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

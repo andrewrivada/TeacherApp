@@ -58,7 +58,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(645, 398);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(72, 31);
             this.button1.TabIndex = 0;
@@ -93,7 +93,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label5.Location = new System.Drawing.Point(13, 22);
+            this.label5.Location = new System.Drawing.Point(12, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 26);
             this.label5.TabIndex = 17;
@@ -168,6 +168,7 @@
             // class_pick_label
             // 
             this.class_pick_label.AutoSize = true;
+            this.class_pick_label.BackColor = System.Drawing.Color.Transparent;
             this.class_pick_label.Location = new System.Drawing.Point(111, 365);
             this.class_pick_label.Name = "class_pick_label";
             this.class_pick_label.Size = new System.Drawing.Size(74, 13);
@@ -207,6 +208,7 @@
             // proff_pick_label
             // 
             this.proff_pick_label.AutoSize = true;
+            this.proff_pick_label.BackColor = System.Drawing.Color.Transparent;
             this.proff_pick_label.Location = new System.Drawing.Point(15, 365);
             this.proff_pick_label.Name = "proff_pick_label";
             this.proff_pick_label.Size = new System.Drawing.Size(93, 13);
@@ -216,6 +218,7 @@
             // stud_pick_label
             // 
             this.stud_pick_label.AutoSize = true;
+            this.stud_pick_label.BackColor = System.Drawing.Color.Transparent;
             this.stud_pick_label.Location = new System.Drawing.Point(188, 365);
             this.stud_pick_label.Name = "stud_pick_label";
             this.stud_pick_label.Size = new System.Drawing.Size(86, 13);
@@ -263,7 +266,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox1.Location = new System.Drawing.Point(519, 257);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(134, 26);
             this.textBox1.TabIndex = 30;
@@ -272,6 +275,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(545, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 13);
@@ -303,9 +307,10 @@
             this.Controls.Add(this.filter_list);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Students";
-            this.Text = "c";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "View Students";
             this.Load += new System.EventHandler(this.Students_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

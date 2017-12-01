@@ -70,6 +70,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(272, 43);
             this.radioButton1.Name = "radioButton1";
@@ -77,19 +78,20 @@
             this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Add Students";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.Click += new System.EventHandler(this.Add_Student);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Location = new System.Drawing.Point(368, 42);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(93, 17);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Drop Students";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.Click += new System.EventHandler(this.Drop_Student);
             // 
             // label2
@@ -124,16 +126,20 @@
             // student_id
             // 
             this.student_id.Location = new System.Drawing.Point(128, 84);
+            this.student_id.MaxLength = 10;
             this.student_id.Name = "student_id";
             this.student_id.Size = new System.Drawing.Size(220, 20);
             this.student_id.TabIndex = 9;
+            this.student_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.student_id_KeyPress);
             // 
             // course_ID
             // 
             this.course_ID.Location = new System.Drawing.Point(128, 127);
+            this.course_ID.MaxLength = 10;
             this.course_ID.Name = "course_ID";
             this.course_ID.Size = new System.Drawing.Size(222, 20);
             this.course_ID.TabIndex = 10;
+            this.course_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.course_ID_KeyPress);
             // 
             // label4
             // 
@@ -142,9 +148,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
+            this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Course ID:";
+            this.label4.Text = "Class ID:";
             // 
             // button2
             // 
@@ -190,7 +196,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Teacher_App.Properties.Resources.school_apple_on_desk;
-            this.ClientSize = new System.Drawing.Size(507, 448);
+            this.ClientSize = new System.Drawing.Size(513, 448);
             this.Controls.Add(this.last_student);
             this.Controls.Add(this.Profesor_ID);
             this.Controls.Add(this.professor_ID);
@@ -207,6 +213,7 @@
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Add_Drop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Drop";
             this.ResumeLayout(false);
             this.PerformLayout();

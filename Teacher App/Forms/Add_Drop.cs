@@ -21,6 +21,7 @@ namespace Teacher_App
         {
             this.Hide();
             Form1 F2 = new Form1();
+
             F2.ShowDialog();
             this.Close();            
         }
@@ -103,21 +104,52 @@ namespace Teacher_App
                     MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            else // remove a student
             {
-                Student remove_student = Form1.Student_list.SingleOrDefault(x => x.course_id == Convert.ToInt32(course_ID.Text));
-                
 
-                if (remove_student != null && remove_student.student_id == student_id.Text)
+
+                if (student_id.Text == "" && course_ID.Text == "") //
                 {
-                    Form1.Student_list.Remove(remove_student);
-                    global_status.List_changed = true;
+                    string message = "Please ensure all fields are complete.";
+                    string caption = "Incomplete Entry";
+                    MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 }
                 else
                 {
-                    MessageBox.Show("Student not found!\n");
+                    Student remove_student = Form1.Student_list.SingleOrDefault(x => x.course_id == Convert.ToInt32(course_ID.Text));
+                    if (remove_student != null && remove_student.student_id == student_id.Text)
+                    {
+                        Form1.Student_list.Remove(remove_student);
+                        global_status.List_changed = true;
+                        MessageBox.Show(remove_student.name + " has been removed.\n");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Student not found!\n");
+                    }
                 }
             }
+        }
+
+        private void course_ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //these three lines of codes are from a tutorial at www.youtube.com/watch?v=EcZQghn88vE
+            //it is used to avoid the user's errors
+            //using this function, the user can only enter a number in the course_id text box.
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8)
+                e.Handled = true;
+        }
+
+        private void student_id_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //these three lines of codes are from a tutorial at www.youtube.com/watch?v=EcZQghn88vE
+            //it is used to avoid the user's errors
+            //using this function, the user can only enter a number in the course_id text box.
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8)
+                e.Handled = true;
         }
     }
 }

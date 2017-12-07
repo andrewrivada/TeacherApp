@@ -128,7 +128,73 @@ namespace Teacher_App
                         list.SubItems.Add("" + Form1.Student_list[i].total_grade);
                         listView1.Items.Add(list);
                         Filtered_students.Add(Form1.Student_list[i]);
-                    } 
+                    } /*else if (Form1.Student_list[i].profesor_id == Convert.ToInt32(proff_pick.Text) &&
+                        Form1.Student_list[i].course_id == Convert.ToInt32(class_pick.Text) &&
+                        student_pick.Text == "")
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } else if (Form1.Student_list[i].profesor_id == Convert.ToInt32(proff_pick.Text) &&
+                        class_pick.Text == "" &&
+                        Form1.Student_list[i].student_id == student_pick.Text)
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } else if (Form1.Student_list[i].profesor_id == Convert.ToInt32(proff_pick.Text) &&
+                        class_pick.Text == "" &&
+                        student_pick.Text == "")
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } else if (proff_pick.Text == "" &&
+                        Form1.Student_list[i].course_id == Convert.ToInt32(class_pick.Text) &&
+                        Form1.Student_list[i].student_id == student_pick.Text)
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } else if (proff_pick.Text == "" &&
+                        Form1.Student_list[i].course_id == Convert.ToInt32(class_pick.Text) &&
+                        student_pick.Text == "")
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } else if (proff_pick.Text == "" &&
+                        class_pick.Text == "" &&
+                        Form1.Student_list[i].student_id == student_pick.Text)
+                    {
+                        ListViewItem list = new ListViewItem("" + Form1.Student_list[i].profesor_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].course_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].student_id);
+                        list.SubItems.Add("" + Form1.Student_list[i].name);
+                        list.SubItems.Add("" + Form1.Student_list[i].attendance);
+                        list.SubItems.Add("" + Form1.Student_list[i].Grades);
+                        listView1.Items.Add(list);
+                    } */
                 }
                 //Reset entry
                 proff_pick.Text = "";

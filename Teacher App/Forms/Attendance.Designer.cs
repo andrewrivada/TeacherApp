@@ -113,10 +113,10 @@
             this.present_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.present_button.Location = new System.Drawing.Point(549, 192);
             this.present_button.Name = "present_button";
-            this.present_button.Size = new System.Drawing.Size(72, 20);
+            this.present_button.Size = new System.Drawing.Size(68, 20);
             this.present_button.TabIndex = 16;
             this.present_button.TabStop = true;
-            this.present_button.Text = "Present";
+            this.present_button.Text = "Absent";
             this.present_button.UseVisualStyleBackColor = false;
             this.present_button.CheckedChanged += new System.EventHandler(this.present_button_CheckedChanged);
             // 
@@ -129,10 +129,10 @@
             this.absent_button.Location = new System.Drawing.Point(627, 193);
             this.absent_button.MaximumSize = new System.Drawing.Size(4000, 0);
             this.absent_button.Name = "absent_button";
-            this.absent_button.Size = new System.Drawing.Size(68, 20);
+            this.absent_button.Size = new System.Drawing.Size(72, 20);
             this.absent_button.TabIndex = 17;
             this.absent_button.TabStop = true;
-            this.absent_button.Text = "Absent";
+            this.absent_button.Text = "Present";
             this.absent_button.UseVisualStyleBackColor = false;
             this.absent_button.CheckedChanged += new System.EventHandler(this.absent_button_CheckedChanged);
             // 

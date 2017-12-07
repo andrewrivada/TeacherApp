@@ -103,6 +103,7 @@ namespace Teacher_App
             present_button.Checked = false;
             absent_button.Checked = false;
 
+            global_status.List_changed = true;
         }
 
 
